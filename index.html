@@ -1,96 +1,16 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Hollywood Review — Literary Magazine</title>
-<meta name="description" content="The Hollywood Review publishes short fiction, poetry, essays, criticism, and conversations.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="page">
-  <header class="masthead">
-    <div class="brand">
-      <div class="logo-hover" id="logoHover" aria-label="The Hollywood Review logo">
-        <div class="logo-layer black">
-          <span class="name" aria-label="The Hollywood Review">
-            <span class="row the" data-text="THE"></span>
-            <span class="row hollywood" data-text="HOLLYWOOD"></span>
-            <span class="row review" data-text="REVIEW"></span>
-          </span>
-        </div>
-      </div>
-    </div>
-    <nav class="top-nav right" aria-label="Main navigation">
-      <a class="nav-button" href="#about">About</a>
-      <a class="nav-button" href="#submit">Submit</a>
-      <a class="nav-button" href="#events">Events</a>
-      <a class="nav-button" href="#merch">THR Merch</a>
-      <a class="social-button" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="social-dot" cx="17.4" cy="6.6" r="1"></circle></svg>
-      </a>
-      <a class="social-button" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21.5 6.1c-.7.3-1.5.5-2.3.6a4 4 0 0 0 1.7-2.2c-.7.4-1.6.8-2.4.9A4 4 0 0 0 11.6 9c0 .3 0 .6.1.9A11.3 11.3 0 0 1 3.5 5.7a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.7-.5v.1a4 4 0 0 0 3.2 3.9c-.3.1-.7.1-1.1.1-.2 0-.5 0-.7-.1a4 4 0 0 0 3.7 2.8A8 8 0 0 1 2 19.1a11.3 11.3 0 0 0 6.1 1.8c7.3 0 11.3-6 11.3-11.3V9A8 8 0 0 0 21.5 6.1Z"></path></svg>
-      </a>
-    </nav>
-  </header>
-
-  <main class="articles" aria-label="Latest stories">
-    <a class="article article-link" href="stories/last-scene.html" aria-label="Read Story Title 1 by Author Name 1">
-      <article><p class="category">Category 1</p><div class="headline-wrap"><span class="starburst" aria-hidden="true"></span><h2 class="headline">Story<br>Title<br>One</h2></div>
-      <p class="byline">by Author Name 1</p><p class="dek">Short description for story one. Replace this text with the story summary.</p></article>
-    </a>
-    <a class="article article-link" href="stories/notes-from-a-small-country.html" aria-label="Read Story Title 2 by Author Name 2">
-      <article><p class="category">Category 2</p><div class="headline-wrap"><span class="starburst" aria-hidden="true"></span><h2 class="headline">Story<br>Title<br>Two</h2></div>
-      <p class="byline">by Author Name 2</p><p class="dek">Short description for story two. Replace this text with the story summary.</p></article>
-    </a>
-    <a class="article article-link" href="stories/the-art-of-looking-away.html" aria-label="Read Story Title 3 by Author Name 3">
-      <article><p class="category">Category 3</p><div class="headline-wrap"><span class="starburst" aria-hidden="true"></span><h2 class="headline">Story<br>Title<br>Three</h2></div>
-      <p class="byline">by Author Name 3</p><p class="dek">Short description for story three. Replace this text with the story summary.</p></article>
-    </a>
-    <a class="article article-link" href="stories/revisiting-the-brutalist-dream.html" aria-label="Read Story Title 4 by Author Name 4">
-      <article><p class="category">Category 4</p><div class="headline-wrap"><span class="starburst" aria-hidden="true"></span><h2 class="headline">Story<br>Title<br>Four</h2></div>
-      <p class="byline">by Author Name 4</p><p class="dek">Short description for story four. Replace this text with the story summary.</p></article>
-    </a>
-    <a class="article article-link" href="stories/writing-and-disappearance.html" aria-label="Read Story Title 5 by Author Name 5">
-      <article><p class="category">Category 5</p><div class="headline-wrap"><span class="starburst" aria-hidden="true"></span><h2 class="headline">Story<br>Title<br>Five</h2></div>
-      <p class="byline">by Author Name 5</p><p class="dek">Short description for story five. Replace this text with the story summary.</p></article>
-    </a>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-left"><img class="footer-envelope" src="Assets/envelope-transparent.png" alt=""><a class="mailing-list-button bowlby-one-sc" href="#newsletter"><span class="mailing-list-text">Sign Up For Our Mailing List</span></a></div>
-  </footer>
-</div>
-<script>
-  const rows = document.querySelectorAll('.row');
-  const CHUNK_SIZE = 3, CHUNK_DELAY = 0.22, INITIAL_DELAY = 0.28;
-  const directions = [[-42,18,-9,.94],[36,-24,7,1.02],[-28,-32,5,.96],[48,12,-6,1.04],[-34,28,8,.97],[26,-20,-7,1.03],[-46,-10,6,.95],[32,24,-5,1.02],[-24,34,9,.96],[44,-28,-8,1.04],[-38,16,5,.98],[30,-18,-6,1.02]];
-  let letterIndex = 0;
-  rows.forEach(row => {
-    [...row.dataset.text].forEach(char => {
-      const span = document.createElement('span');
-      span.className = 'letter'; span.textContent = char;
-      const d = directions[letterIndex % directions.length];
-      span.style.setProperty('--x', `${d[0]}px`); span.style.setProperty('--y', `${d[1]}px`);
-      span.style.setProperty('--r', `${d[2]}deg`); span.style.setProperty('--s', d[3]);
-      const chunk = Math.floor(letterIndex / CHUNK_SIZE);
-      span.style.setProperty('--delay', `${INITIAL_DELAY + chunk * CHUNK_DELAY}s`);
-      row.appendChild(span); letterIndex++;
-    });
-  });
-  const LOOP_DURATION = 3200;
-  const animatedPieces = document.querySelectorAll('.letter');
-  function replayCutoutSequence() {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    animatedPieces.forEach(piece => piece.style.animation = 'none');
-    void document.body.offsetWidth;
-    animatedPieces.forEach(piece => piece.style.animation = '');
-  }
-  setInterval(replayCutoutSequence, LOOP_DURATION);
-</script>
-</body>
+<html lang="<!-- figma:lang -->">
+  <head>
+    <!-- figma:head-start -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><!-- figma:title --></title>
+    <!-- figma:head-end -->
+  </head>
+  <body>
+    <!-- figma:body-start -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- figma:body-end -->
+  </body>
 </html>
